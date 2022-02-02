@@ -1,7 +1,23 @@
 {
+  "name": "coding9node",
+  "version": "1.0.0",
+  "description": "This is a coding tech example",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/conukogu/CodingChall-JS1.git"
+  },
+  "author": "Chioma Onukogu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/conukogu/CodingChall-JS1/issues"
+  },
+  "homepage": "https://github.com/conukogu/CodingChall-JS1#readme",
   "dependencies": {
-    "prompt": "^1.2.1",
-    "prompt-sync": "^4.1.6",
-    "save": "^2.4.0"
+    "nodemon": "^2.0.15"
   }
 }
