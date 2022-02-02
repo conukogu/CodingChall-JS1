@@ -42,9 +42,9 @@ console.log((pivot(testArr2, x)));
 
 
 
-let a1=67;
+let a1=11;
 
-let arr1=[7,3,5];
+let arr1=[1, 2, 5];
 
 let keep=0;
 let rem=0;
@@ -130,7 +130,7 @@ const keepRecord=(keep, arrI) =>
 
   function solvingIt (valueArr, reassesArr, newAmount)
   {
-      for(let i=(valueArr.length-reassesArr.length)-1; i<valueArr.length; i++)
+      for(let i=reassesArr.length; i<valueArr.length; i++)
       {
           reassesArr.push(Math.floor(newAmount/valueArr[i]))
           newAmount=newTotal%valueArr[i];
@@ -143,12 +143,12 @@ const keepRecord=(keep, arrI) =>
   
   
   
-  console.log(reasses(numAmountIn));
+//   console.log(reasses(numAmountIn));
 
-  newTotal=a1-newNum(numUsed, numAmountIn);
+//   newTotal=a1-newNum(numUsed, numAmountIn);
 
-  console.log(`Hey2! ${newNum(numUsed, numAmountIn)}`)
+//   console.log(`Hey2! ${newNum(numUsed, numAmountIn)}`)
 
-  console.log(`Heyo2! ${newTotal}`)
+//   console.log(`Heyo2! ${newTotal}`)
 
-  console.log(solvingIt(numUsed, numAmountIn, newTotal));
+//   console.log(solvingIt(numUsed, numAmountIn, newTotal));
