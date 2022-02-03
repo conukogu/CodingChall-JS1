@@ -42,9 +42,9 @@ console.log((pivot(testArr2, x)));
 
 
 
-let a1=58;
+let a1=18102;
 
-let arr1=[7,3,5];
+let arr1=[143, 1623, 1646, 16336, 1624, 983, 122];
 
 let keep=0;
 let rem=0;
@@ -53,14 +53,17 @@ let numUsed=[];
 let numAmountIn=[];
 let newTotal=0;
 
+
 const veryHard=(num, arr) =>
 {
-    arr.sort();
+    arr.sort( function(x, y){return x - y});
+    console.log(arr)
     for(i=arr.length-1; i>=0; i--)
     {
         keep=Math.floor(num/arr[i])
-        record.push(`The number ${arr[i]} goes into ${num} about ${keep} times`)
-        record.push(`Here is the reminader: ${num%arr[i]}`)
+        record.push
+        //(`The number ${arr[i]} goes into ${num} about ${keep} times`)
+        // record.push(`Here is the reminader: ${num%arr[i]}`)
         num=num%arr[i]
         keepRecord(keep, arr[i]);
     }
@@ -87,11 +90,11 @@ const keepRecord=(keep, arrI) =>
             {i--};
             arr[i]=arr[i]-1;
 
-            console.log(arr);
+            // console.log(arr);
             
             arr.splice(i+1);
 
-            console.log(arr);
+            // console.log(arr);
 
             return arr
     }
@@ -120,7 +123,9 @@ const keepRecord=(keep, arrI) =>
       for(let i=reassesArr.length; i<valueArr.length; i++)
       {
           reassesArr.push(Math.floor(newAmount/valueArr[i]))
-          newAmount=newTotal%valueArr[i];
+        //   console.log(`${Math.floor(newAmount/valueArr[i])} is the whole into and ${valueArr[i]} is value`)
+        //   console.log(newAmount)
+          newAmount=newAmount%valueArr[i];
       }
       return reassesArr;
   }
@@ -131,22 +136,25 @@ const keepRecord=(keep, arrI) =>
 
 
 
-  console.log(veryHard(a1, arr1));
-  console.log(`This are the numbers: \n ${numUsed}`);
+//   console.log(veryHard(a1, arr1));
 
-  console.log(`This are the corresponding amout in: \n ${numAmountIn}`);
+//   console.log(`This are the numbers: \n ${numUsed}`);
 
-  console.log(`This is the new assesment and split: \n ${reasses(numAmountIn)}`);
+//   console.log(`This are the corresponding amout in: \n ${numAmountIn}`);
+
+//   console.log(`This is the new assesment and split: \n ${reasses(numAmountIn)}`);
 
 
 
-newTotal=a1-newNum(numUsed, numAmountIn);
+// newTotal=a1-newNum(numUsed, numAmountIn);
 
- console.log(`Hey! ${newNum(numUsed, numAmountIn)}`)
 
-  console.log(`Heyo! ${newTotal}`)
+
+//  console.log(`Hey! ${newNum(numUsed, numAmountIn)}`)
+
+//   console.log(`Heyo! ${newTotal}`)
   
-   console.log(solvingIt(numUsed, numAmountIn, newTotal));
+//    console.log(solvingIt(numUsed, numAmountIn, newTotal));
   
 //   console.log(reasses(numAmountIn));
 
@@ -157,3 +165,48 @@ newTotal=a1-newNum(numUsed, numAmountIn);
 //   console.log(`Heyo2! ${newTotal}`)
 
 //   console.log(solvingIt(numUsed, numAmountIn, newTotal));
+
+
+  function allTogether()
+  {
+      veryHard(a1,arr1);
+
+      console.log(`This are the numbers: \n ${numUsed}`);
+
+      console.log(`This are the corresponding amout in: \n ${numAmountIn}`);
+
+      console.log(`This is the new assesment and split: \n ${reasses(numAmountIn)}`);
+      //reasses(numAmountIn);
+      newTotal=a1-newNum(numUsed, numAmountIn);
+      newNum(numUsed, numAmountIn);
+      return solvingIt(numUsed, numAmountIn, newTotal);
+  }
+
+
+  function allTogether2()
+  {
+      console.log(`This are the numbers: \n ${numUsed}`);
+
+      console.log(`This are the corresponding amout in: \n ${numAmountIn}`);
+
+      console.log(`This is the new assesment and split: \n ${reasses(numAmountIn)}`);
+      //reasses(numAmountIn);
+      newTotal=a1-newNum(numUsed, numAmountIn);
+      newNum(numUsed, numAmountIn);
+      return solvingIt(numUsed, numAmountIn, newTotal);
+  }
+
+
+
+
+  console.log(allTogether());
+  console.log(`This are the numbers: \n ${numUsed}`);
+
+  console.log(allTogether2());
+  console.log(`This are the numbers: \n ${numUsed}`);
+
+  function gotThis ()
+  {
+    let finArr=allTogether();
+    
+  }
