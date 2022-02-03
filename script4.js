@@ -1,3 +1,5 @@
+//Easy Challenge
+
 const average = (arr) =>
 {   
     let a=0;
@@ -14,7 +16,7 @@ let testArr=[1.5, 3, 2.5, 1];
 console.log(average(testArr));
 
 
-//---------------------------------------------------------------------------------------------------------//
+//---------------------------Medium Challenge------------------------------------//
 
 const pivot = (arr, x) =>
 {
@@ -42,9 +44,16 @@ console.log((pivot(testArr2, x)));
 
 
 
-let a1=18102;
+/*------------------Here is where the very hard challenge begins!----------------*/
+//I have absolutely no idea how to get it to break an infinte loop and log -1 when the numbers can add up.//
 
-let arr1=[143, 1623, 1646, 16336, 1624, 983, 122];
+
+// let a1=18102;
+
+// let arr1=[143, 1623, 1646, 16336, 1624, 983, 122];
+
+let a1=44;
+let arr1=[2];
 
 let keep=0;
 let rem=0;
@@ -238,36 +247,6 @@ const keepRecord=(keep, arrI) =>
 
 //   console.log(gotThis(arr1));
 
-
-
-veryHard(a1, arr1);
-
-let revArr1=[];
-
-for (i=arr1.length-1; i>=0; i--)
-{
-    revArr1.push(arr1[i]);
-}
-
-reasses(numAmountIn);
-
-newTotal=a1-newNum(numUsed, numAmountIn);
-
-newNum(numUsed, numAmountIn)
-
-solvingIt(numUsed, numAmountIn, newTotal);
-
-let stopper=sumCheck(numAmountIn);
-
-while (stopper===false)
-{
-    gotThis();
-    stopper=sumCheck(numAmountIn);
-}
-
-
-console.log(numAmountIn);
-
 function gotThis ()
 {
 reasses(numAmountIn);
@@ -277,7 +256,6 @@ newNum(numUsed, numAmountIn)
 
  return solvingIt(numUsed, numAmountIn, newTotal);
 }
-
 
 
 function sumCheck (arr)
@@ -298,3 +276,55 @@ function sumCheck (arr)
     }
 
 }
+
+/*---------------------------The Actual code to run the thing--------------------*/
+
+veryHard(a1, arr1);
+
+let revArr1=[];
+
+for (i=arr1.length-1; i>=0; i--)
+{
+    revArr1.push(arr1[i]);
+}
+
+reasses(numAmountIn);
+
+newTotal=a1-newNum(numUsed, numAmountIn);
+
+newNum(numUsed, numAmountIn)
+
+solvingIt(numUsed, numAmountIn, newTotal);
+
+let stopper=sumCheck(numAmountIn);
+
+if (a1<Math.min(...arr1))
+{
+    stopper=true;
+    console.log("-1");
+}
+
+while (stopper===false)
+{
+    gotThis();
+    stopper=sumCheck(numAmountIn);
+}
+
+
+console.log(numAmountIn);
+
+let actualAnswer=0;
+
+if(numAmountIn.length===1)
+{
+    actualAnswer=numAmountIn[0];
+}
+else
+{
+    for (i=0; i<numAmountIn.length; i++)
+        {
+        actualAnswer=numAmountIn[i]+actualAnswer;
+        }
+}
+
+console.log(`The minimun number of integers need from this array to sum your number is: \n${actualAnswer}\nThank you for playing!`)
