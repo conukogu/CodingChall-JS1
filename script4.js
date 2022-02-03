@@ -237,3 +237,64 @@ const keepRecord=(keep, arrI) =>
 
 
 //   console.log(gotThis(arr1));
+
+
+
+veryHard(a1, arr1);
+
+let revArr1=[];
+
+for (i=arr1.length-1; i>=0; i--)
+{
+    revArr1.push(arr1[i]);
+}
+
+reasses(numAmountIn);
+
+newTotal=a1-newNum(numUsed, numAmountIn);
+
+newNum(numUsed, numAmountIn)
+
+solvingIt(numUsed, numAmountIn, newTotal);
+
+let stopper=sumCheck(numAmountIn);
+
+while (stopper===false)
+{
+    gotThis();
+    stopper=sumCheck(numAmountIn);
+}
+
+
+console.log(numAmountIn);
+
+function gotThis ()
+{
+reasses(numAmountIn);
+
+newTotal=a1-newNum(numUsed, numAmountIn);
+newNum(numUsed, numAmountIn)
+
+ return solvingIt(numUsed, numAmountIn, newTotal);
+}
+
+
+
+function sumCheck (arr)
+{
+    let arrSum=0
+    for (i=0; i<arr.length; i++)
+    {
+        arrSum =(arr[i]*revArr1[i])+arrSum;
+    }
+    console.log(`This is a1: ${a1} and this is arrSum ${arrSum}`)
+    if(arrSum===a1)
+    {
+        return true
+    }
+    else
+    {
+        return false;
+    }
+
+}
