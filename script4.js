@@ -13,7 +13,7 @@ const average = (arr) =>
 
 let testArr=[1.5, 3, 2.5, 1];
 
-console.log(average(testArr));
+console.log(average(`This is the average of all the numbers: ${testArr}`));
 
 
 //---------------------------Medium Challenge------------------------------------//
@@ -40,9 +40,26 @@ const pivot = (arr, x) =>
 let x = 6;
 let testArr2 = [4,5,6,7,0,1,2];
 
-console.log((pivot(testArr2, x)));
+console.log(`The target number is at the index of : ${pivot(testArr2, x)}`);
+
+/*-------------------This is where the hard challenge begins---------------------*/
+var Bluey=document.getElementById("blue");
+var Reddy=document.getElementById("red")
 
 
+function bodyclick ()
+{
+    document.body.style.backgroundColor = "blue";
+}
+
+function bodyclick2()
+{
+document.body.style.backgroundColor="red";
+}
+
+Bluey.addEventListener("click", bodyclick);
+
+Reddy.addEventListener("click", bodyclick2);
 
 /*------------------Here is where the very hard challenge begins!----------------*/
 //I have absolutely no idea how to get it to break an infinte loop and log -1 when the numbers can add up.//
