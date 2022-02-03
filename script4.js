@@ -138,9 +138,9 @@ const keepRecord=(keep, arrI) =>
 
 //   console.log(veryHard(a1, arr1));
 
-//   console.log(`This are the numbers: \n ${numUsed}`);
+//   //console.log(`This are the numbers: \n ${numUsed}`);
 
-//   console.log(`This are the corresponding amout in: \n ${numAmountIn}`);
+//   //console.log(`This are the corresponding amout in: \n ${numAmountIn}`);
 
 //   console.log(`This is the new assesment and split: \n ${reasses(numAmountIn)}`);
 
@@ -152,19 +152,21 @@ const keepRecord=(keep, arrI) =>
 
 //  console.log(`Hey! ${newNum(numUsed, numAmountIn)}`)
 
-//   console.log(`Heyo! ${newTotal}`)
+//   //console.log(`Heyo! ${newTotal}`)
   
 //    console.log(solvingIt(numUsed, numAmountIn, newTotal));
-  
-//   console.log(reasses(numAmountIn));
 
-//   newTotal=a1-newNum(numUsed, numAmountIn);
+
+  
+//    console.log(reasses(numAmountIn));
+
+//  newTotal=a1-newNum(numUsed, numAmountIn);
 
 //   console.log(`Hey2! ${newNum(numUsed, numAmountIn)}`)
 
-//   console.log(`Heyo2! ${newTotal}`)
+// //   console.log(`Heyo2! ${newTotal}`)
 
-//   console.log(solvingIt(numUsed, numAmountIn, newTotal));
+//    console.log(solvingIt(numUsed, numAmountIn, newTotal));
 
 
   function allTogether()
@@ -191,22 +193,47 @@ const keepRecord=(keep, arrI) =>
 
       console.log(`This is the new assesment and split: \n ${reasses(numAmountIn)}`);
       //reasses(numAmountIn);
-      newTotal=a1-newNum(numUsed, numAmountIn);
-      newNum(numUsed, numAmountIn);
+    //   newTotal=a1-newNum(numUsed, numAmountIn);
+    //   newNum(numUsed, numAmountIn);
       return solvingIt(numUsed, numAmountIn, newTotal);
   }
 
 
 
 
-  console.log(allTogether());
-  console.log(`This are the numbers: \n ${numUsed}`);
+//   console.log(allTogether());
+//   console.log(`This are the numbers: \n ${numUsed}`);
 
-  console.log(allTogether2());
-  console.log(`This are the numbers: \n ${numUsed}`);
+//   console.log(allTogether2());
+//   console.log(`This are the numbers: \n ${numUsed}`);
 
-  function gotThis ()
-  {
-    let finArr=allTogether();
-    
-  }
+
+
+
+  
+//   function gotThis (anArr)
+//   {
+//     let sumArr=0;
+//     let finArr=allTogether();
+
+//     for (i=0; i<finArr.length; i++)
+//     {
+//         sumArr = (finArr[i] * anArr[i]) + sumArr;
+//     }
+
+//     console.log(sumArr);
+//     finArr=allTogether2();
+
+//     sumArr=0
+
+//     for (i=0; i<finArr.length; i++)
+//     {
+//         sumArr=(finArr[i] * anArr[i]) + sumArr; 
+//         console.log(sumArr);
+//     }
+
+   
+//     }
+
+
+//   console.log(gotThis(arr1));
